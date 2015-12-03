@@ -1,3 +1,11 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+site:
+    resource: "@SiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+event:
+    resource: "@EventBundle/Resources/config/routing.yml"
+    prefix:   /
+
+people:
+    resource: "@PeopleBundle/Resources/config/routing.yml"
+    prefix:   /
