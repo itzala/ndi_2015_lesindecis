@@ -3,10 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}[LesIndecis] Gestion de crise{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}        
+        {% block stylesheets %}        
+    	<link rel="stylesheet" href="{{ asset('bundles/site/css/main.css') }}" />
+        {% endblock %}        
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+        <script src="{{ asset('bundles/site/js/main.js') }}"></script>    	
+        <script src="{{ asset('bundles/site/js/egg.min.js') }}"></script>
+        <script src="{{ asset('bundles/site/js/padawan.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
