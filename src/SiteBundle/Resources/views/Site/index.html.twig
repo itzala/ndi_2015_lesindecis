@@ -2,4 +2,71 @@
 
 {% block title %}{{ parent() }} - Homepage {% endblock %}
 
+{% block body %}  
+
+   <div class="main-container">
+    <div class="main wrapper clearfix">
+      <!-- Header Start -->
+        <header id="header">
+            <div id="logo">
+                <h2>
+                  Les Indécis
+                </h2>
+                <h4>
+                   Gestion de crise
+                </h4>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Main Tab Container -->
+        <div id="tab-container" class="tab-container">
+          <!-- Tab List -->
+            <ul class='etabs'>
+                <li class='tab' id="tab-about">
+                  <a href="#victime"><i class="icon-user"></i><span>Victime</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#secouriste"><i class="icon-envelope"></i><span>Secouriste</span></a>
+                </li>
+            </ul>
+          <!-- End Tab List -->
+            <div id="tab-data-wrap">
+              <!-- About Tab Data -->
+                <div id="victime">
+                      <section class="clearfix">
+                       <div class="g1">
+                         
+                       </div>
+                       <div class="g1">
+                        
+                       </div>
+                       <div class="g1">
+                        
+                       </div>
+                       
+                    </section>
+                </div>
+            
+                <div id="secouriste">
+                    <section class="clearfix">
+                      <div class="g1">
+                      
+                       </div>
+                       <div class="g1">
+                     
+                       </div>
+                       
+                    </section>
+                </div>
+              <!-- End Contact Data -->
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
+{% endblock %}
+
+
 
