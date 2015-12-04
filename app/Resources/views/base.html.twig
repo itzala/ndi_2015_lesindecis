@@ -3,10 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}[LesIndecis] Gestion de crise{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}        
+        {% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('bundles/site/css/normalize.min.css')}}">
+  		<link rel="stylesheet" href="{{ asset('bundles/site/css/main.css')}}">
+        {% endblock %}        
     </head>
-    <body>
+    <body class="bg-fixed bg-1">
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+
+        <script src="{{ asset('bundles/site/js/jquery/jquery-1.10.1.min.js')}}"></script>
+  		<script src="{{ asset('bundles/site/js/jquery/jquery.hashchange.min.js')}}"></script>
+  		<script src="{{ asset('bundles/site/js/jquery/jquery.easytabs.min.js')}}"></script>
+		<script src="{{ asset('bundles/site/js/main.js')}}"></script>
+        
+        {% endblock %}
     </body>
 </html>
